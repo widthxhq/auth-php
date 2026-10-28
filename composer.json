@@ -1,0 +1,36 @@
+{
+  "name": "widthx/auth",
+  "description": "Widthx Identity OIDC/OAuth2 client and token verification for PHP (framework-agnostic).",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["widthx", "oidc", "openid-connect", "oauth2", "pkce", "jwt", "sso"],
+  "homepage": "https://github.com/widthxhq/auth-php",
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "firebase/php-jwt": "^7.2",
+    "guzzlehttp/guzzle": "^7.9 || ^8.0",
+    "league/oauth2-client": "^2.9",
+    "psr/simple-cache": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5 || ^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Widthx\\Auth\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Widthx\\Auth\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
